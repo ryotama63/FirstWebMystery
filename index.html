@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,12 +7,16 @@
   <link href="./nazo_checker.css" rel="stylesheet" type="text/css"><!-- nazo_checker.css -->
 </head>
 <body>
-  <div class="nazoform">
     <form name="sample1" onsubmit="AnswerCheck(this);return false;">
-      <input type="text" name="input" placeholder="ひらがなで入力">
-      <button type="submit">送信</button>
+        <input type="text" name="input">
+        <button type="submit">送信</button>
     </form>
-    <div class="result"></div>
-  </div>
+    <div id="result"></div>
+
+    <p>
+        「ねこ」「猫」と入力すると、遷移します。<br>
+        「いぬ」「dog」と入力すると、別のところへ遷移します。<br>
+        「あらーと」と入力すると、アラートを出します。<br>
+    </p>
 </body>
 </html>
