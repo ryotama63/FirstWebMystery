@@ -9,7 +9,7 @@ function AnswerCheck(form){
         }
 
         $.ajax({
-            url: "answers/"+send_text,
+            url: "answer/"+send_text,
             type: "GET",
             dataType: "json",
             timeout: 3000,
